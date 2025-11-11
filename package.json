@@ -1,11 +1,11 @@
 {
-  "name": "freestyle-nextjs-template",
+  "name": "template",
   "version": "1.0.0",
   "private": true,
+  "workspaces": ["frontend"],
   "scripts": {
-    "dev": "npm --prefix frontend run dev",
-    "build": "npm --prefix frontend run build",
-    "start": "npm --prefix frontend run start",
-    "lint": "npm --prefix frontend run lint"
+    "dev": "npm run dev -w frontend",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w frontend"
   }
 }
